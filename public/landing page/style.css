@@ -1,0 +1,181 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+body {
+  font-family: 'Poppins', sans-serif;
+}
+
+:root {
+  --blue: #68bae8;
+  --red: #fe5e7a;
+  --yellow: #FFBD55;
+  --blue-green: #45b6bf;
+  --darkblue: #212885;
+  --button: #6777EF;
+  --textgrey: #878787;
+  --bgwhite: background-color: white;
+}
+.wrap-container {
+  overflow: hidden;
+}
+
+.navbar {
+  overflow: hidden;
+  transition:500ms ease;
+  position: fixed; /* Set the navbar to fixed position */
+  top: 0; /* Position the navbar at the top of the page */
+
+  background-color:transparent;
+}
+
+.navbar.scrolled {
+  background-color: #314ece;
+}
+
+.logo {
+  color: #314ece !important;
+  font-weight: bold;
+}
+
+.logo.scrolled {
+  color: white !important;
+}
+
+.nav-link {
+  margin-right: 40px;
+  color: white !important;
+}
+
+.nav-link:hover {
+  font-weight: bold !important;
+}
+
+.active {
+  color: white !important;
+  left: 0;
+}
+
+.btn-nav {
+  border: 1px solid var(--yellow);
+  color: #314ece;
+  background: var(--yellow);
+  padding: 5px 15px;
+  border-radius: 10px;
+  width: 140px !important;
+}
+
+.btn-nav:hover {
+  background:transparent;
+  color: var(--yellow);
+  font-weight: bold;
+}
+
+.slogan {
+  color:black;
+  font-size: 32px;
+  font-weight: bold;
+}
+
+.btn-sign {
+  border: 1px solid var(--yellow);
+  color: var(--yellow);
+  font-weight: bold;
+  padding: 8px 15px;
+  border-radius: 10px;
+  background-color: transparent;
+  width: 160px !important;
+  height: 50px;
+}
+
+.btn-sign:focus {
+  outline: none;
+}
+
+.btn-sign:hover {
+  background: var(--yellow);
+  color: white;
+}
+
+.try-it {
+  font-weight: bold;
+  color: var(--textgrey);
+  font-size: 30px;
+}
+
+.decor {
+  position: absolute;
+  right: 0;
+  z-index: -99;
+}
+/* --------goals word----------- */
+#o {
+  color: var(--yellow);
+}
+#a {
+  color: var(--red);
+}
+#l {
+  color: var(--blue-green);
+}
+#s {
+  color: var(--darkblue);
+}
+
+/* ----------------------------- */
+
+/* ---------try it------------- */
+#f {
+  color: var(--blue-green);
+}
+#r {
+  color: var(--yellow);
+}
+#e1 {
+  color: var(--red);
+}
+#e2 {
+  color: var(--darkblue);
+}
+/* ---------------------------- */
+
+.dev-ava {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#round-orange {
+  width: 10%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -999;
+}
+
+#circle-blue {
+  width: 15%;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  z-index: -999;
+}
+
+.footer {
+  background: linear-gradient(92.67deg, #45b6bf 37.84%, #7e57ff 88.43%);
+}
+
+/* small devices (landscape phones, 576px and up) */
+@media (min-width: 300px) {
+  .slogan {
+    font-size: 24px;
+  }
+  .btn-sign {
+    width: 80px;
+    padding: 4px 10px;
+  }
+}
+
+@media (min-width: 576px) {
+  .slogan {
+    font-size: 32px;
+  }
+}
